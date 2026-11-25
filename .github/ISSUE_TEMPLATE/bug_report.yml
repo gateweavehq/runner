@@ -1,0 +1,36 @@
+name: Bug report
+description: Something does not work as it should.
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, and what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Configure a team with isolation "container"
+        2. ...
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: The release or commit you are running.
+  - type: input
+    id: environment
+    attributes:
+      label: Node version, OS and engine
+      placeholder: Node 24 on Windows 11, Codex
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: The relevant lines of the runner's log. Remove keys and anything private first.
+      render: text

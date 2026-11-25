@@ -1,0 +1,15 @@
+{
+  "name": "@gateweave/runner",
+  "description": "A local runner that works Gateweave Track issues with a local coding engine and opens pull requests.",
+  "license": "AGPL-3.0-only",
+  "private": true,
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "test": "node --test \"*.test.mjs\""
+  },
+  "dependencies": {
+    "yaml": "2.9.1"
+  }
+}
